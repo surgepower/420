@@ -1,0 +1,31 @@
+\documentclass[11pt]{article}
+\usepackage{fullpage, amsmath, amsthm, amsfonts, graphicx,hyperref}
+
+%\usepackage{epsfig}
+
+\newcommand{\Ex}[2]{\mathop{\mathbb{E}}\displaylimits_{#1}\left
+[ #2 \right ]}
+\newcommand{\Expect}[1]{\mathop{\mathbb{E}}\left
+[ #1 \right ]}
+
+\newcommand{\papprox}[1]{\stackrel{#1}{\approx}}
+
+\usepackage{comment,verbatim}
+
+\begin{document}
+\input{preamble.tex}
+
+\homework{2}{January 13, 2017}{Thomas Rothvoss}{January 20, 2017} 
+
+Read the fine print\footnote{In solving the problem sets, you are allowed to collaborate with fellow students taking the class, but \textbf{each submission can have at most one author}. If you do collaborate in any way, you must acknowledge, for each problem, the people you worked with on that problem.
+The problems have been carefully chosen for their pedagogical value, and hence might be similar to those given in past offerings of this course at UW, or similar to other courses at other schools.  Using any pre-existing solutions from these sources, for from the web, constitutes a violation of the academic integrity you are expected to exemplify, and is strictly prohibited.
+Most of the problems only require one or two key ideas for their solution.  It will help you a lot to spell out these main ideas so that you can get most of the credit for a problem even if you err on the finer details. Please justify all answers. Some other guidelines for writing good solutions are here: \url{http://www.cs.washington.edu/education/courses/cse421/08wi/guidelines.pdf}.}. Each problem is worth $10$ points:
+
+\begin{enumerate}
+\item Draw a BFS tree for the following graph starting at $t$. Is the graph bipartite? If it is, show how to 2-color the graph. If it is not bipartite, show an odd cycle. (It might be easiest to work with the printed copy of the graph). 
+\includegraphics[width=13cm]{undirectedgraph.pdf}
+\item Prove that in every undirected graph, there must be two vertices that have the same degree. 
+\item Prove that in any tree with $n$ vertices, the number of nodes with $3$ or more neighbors is at most $2(n-1)/3$. 
+\end{enumerate}
+
+\end{document}
